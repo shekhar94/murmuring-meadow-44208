@@ -48,9 +48,9 @@ var AppRoutingModule = (function () {
 }());
 AppRoutingModule = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
-        imports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* RouterModule */].forRoot(routes)],
+        imports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["d" /* RouterModule */].forRoot(routes)],
         exports: [
-            __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* RouterModule */]
+            __WEBPACK_IMPORTED_MODULE_1__angular_router__["d" /* RouterModule */]
         ],
         declarations: []
     })
@@ -142,27 +142,32 @@ var _a, _b;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_platform_browser_animations__ = __webpack_require__("../../../platform-browser/@angular/platform-browser/animations.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common_http__ = __webpack_require__("../../../common/@angular/common/http.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ngx_bootstrap_modal__ = __webpack_require__("../../../../ngx-bootstrap/modal/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_ngx_bootstrap_progressbar__ = __webpack_require__("../../../../ngx-bootstrap/progressbar/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_angular2_fontawesome_angular2_fontawesome__ = __webpack_require__("../../../../angular2-fontawesome/angular2-fontawesome.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_angular2_fontawesome_angular2_fontawesome___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_angular2_fontawesome_angular2_fontawesome__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__app_routing_app_routing_module__ = __webpack_require__("../../../../../src/app/app-routing/app-routing.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__practice_practice_component__ = __webpack_require__("../../../../../src/app/practice/practice.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__home_home_component__ = __webpack_require__("../../../../../src/app/home/home.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__login_signup_login_signup_component__ = __webpack_require__("../../../../../src/app/login-signup/login-signup.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__login_login_component__ = __webpack_require__("../../../../../src/app/login/login.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__signup_signup_component__ = __webpack_require__("../../../../../src/app/signup/signup.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__shared_routing_service__ = __webpack_require__("../../../../../src/app/shared/routing.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__shared_utility_service__ = __webpack_require__("../../../../../src/app/shared/utility.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__footer_footer_component__ = __webpack_require__("../../../../../src/app/footer/footer.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__auth_auth_component__ = __webpack_require__("../../../../../src/app/auth/auth.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_angular_bootstrap_md__ = __webpack_require__("../../../../angular-bootstrap-md/index.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_ngx_bootstrap_modal__ = __webpack_require__("../../../../ngx-bootstrap/modal/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_ngx_bootstrap_progressbar__ = __webpack_require__("../../../../ngx-bootstrap/progressbar/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_angular2_fontawesome_angular2_fontawesome__ = __webpack_require__("../../../../angular2-fontawesome/angular2-fontawesome.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_angular2_fontawesome_angular2_fontawesome___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_angular2_fontawesome_angular2_fontawesome__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__app_routing_app_routing_module__ = __webpack_require__("../../../../../src/app/app-routing/app-routing.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__practice_practice_component__ = __webpack_require__("../../../../../src/app/practice/practice.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__home_home_component__ = __webpack_require__("../../../../../src/app/home/home.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__login_signup_login_signup_component__ = __webpack_require__("../../../../../src/app/login-signup/login-signup.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__login_login_component__ = __webpack_require__("../../../../../src/app/login/login.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__signup_signup_component__ = __webpack_require__("../../../../../src/app/signup/signup.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__shared_auth_service__ = __webpack_require__("../../../../../src/app/shared/auth.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__shared_routing_service__ = __webpack_require__("../../../../../src/app/shared/routing.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__shared_utility_service__ = __webpack_require__("../../../../../src/app/shared/utility.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__footer_footer_component__ = __webpack_require__("../../../../../src/app/footer/footer.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__auth_auth_component__ = __webpack_require__("../../../../../src/app/auth/auth.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
 
 
 
@@ -189,6 +194,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 var AppModule = (function () {
     function AppModule() {
     }
@@ -197,32 +203,35 @@ var AppModule = (function () {
 AppModule = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_8__app_component__["a" /* AppComponent */],
-            __WEBPACK_IMPORTED_MODULE_10__practice_practice_component__["a" /* PracticeComponent */],
-            __WEBPACK_IMPORTED_MODULE_11__home_home_component__["a" /* HomeComponent */],
-            __WEBPACK_IMPORTED_MODULE_12__login_signup_login_signup_component__["a" /* LoginSignupComponent */],
-            __WEBPACK_IMPORTED_MODULE_13__login_login_component__["a" /* LoginComponent */],
-            __WEBPACK_IMPORTED_MODULE_14__signup_signup_component__["a" /* SignupComponent */],
-            __WEBPACK_IMPORTED_MODULE_17__footer_footer_component__["a" /* FooterComponent */],
-            __WEBPACK_IMPORTED_MODULE_18__auth_auth_component__["a" /* AuthComponent */]
+            __WEBPACK_IMPORTED_MODULE_10__app_component__["a" /* AppComponent */],
+            __WEBPACK_IMPORTED_MODULE_12__practice_practice_component__["a" /* PracticeComponent */],
+            __WEBPACK_IMPORTED_MODULE_13__home_home_component__["a" /* HomeComponent */],
+            __WEBPACK_IMPORTED_MODULE_14__login_signup_login_signup_component__["a" /* LoginSignupComponent */],
+            __WEBPACK_IMPORTED_MODULE_15__login_login_component__["a" /* LoginComponent */],
+            __WEBPACK_IMPORTED_MODULE_16__signup_signup_component__["a" /* SignupComponent */],
+            __WEBPACK_IMPORTED_MODULE_20__footer_footer_component__["a" /* FooterComponent */],
+            __WEBPACK_IMPORTED_MODULE_21__auth_auth_component__["a" /* AuthComponent */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
             __WEBPACK_IMPORTED_MODULE_4__angular_common_http__["b" /* HttpClientModule */],
+            __WEBPACK_IMPORTED_MODULE_5__angular_http__["HttpModule"],
             // MaterialuiModule,
-            __WEBPACK_IMPORTED_MODULE_9__app_routing_app_routing_module__["a" /* AppRoutingModule */],
+            __WEBPACK_IMPORTED_MODULE_11__app_routing_app_routing_module__["a" /* AppRoutingModule */],
             __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */],
-            __WEBPACK_IMPORTED_MODULE_7_angular2_fontawesome_angular2_fontawesome__["Angular2FontawesomeModule"],
-            __WEBPACK_IMPORTED_MODULE_5_ngx_bootstrap_modal__["b" /* ModalModule */].forRoot(),
-            __WEBPACK_IMPORTED_MODULE_6_ngx_bootstrap_progressbar__["a" /* ProgressbarModule */].forRoot(),
+            __WEBPACK_IMPORTED_MODULE_9_angular2_fontawesome_angular2_fontawesome__["Angular2FontawesomeModule"],
+            __WEBPACK_IMPORTED_MODULE_7_ngx_bootstrap_modal__["b" /* ModalModule */].forRoot(),
+            __WEBPACK_IMPORTED_MODULE_8_ngx_bootstrap_progressbar__["a" /* ProgressbarModule */].forRoot(),
+            __WEBPACK_IMPORTED_MODULE_6_angular_bootstrap_md__["a" /* MDBBootstrapModule */].forRoot(),
             // ToastrModule.forRoot(),
             // AngularFireModule.initializeApp(environment.firebase),
             // AngularFireDatabaseModule,
             // AngularFireAuthModule,
             __WEBPACK_IMPORTED_MODULE_3__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */]
         ],
-        providers: [__WEBPACK_IMPORTED_MODULE_15__shared_routing_service__["a" /* RoutingService */], __WEBPACK_IMPORTED_MODULE_16__shared_utility_service__["a" /* UtilityService */]],
-        bootstrap: [__WEBPACK_IMPORTED_MODULE_8__app_component__["a" /* AppComponent */]]
+        providers: [__WEBPACK_IMPORTED_MODULE_18__shared_routing_service__["a" /* RoutingService */], __WEBPACK_IMPORTED_MODULE_19__shared_utility_service__["a" /* UtilityService */], __WEBPACK_IMPORTED_MODULE_17__shared_auth_service__["a" /* AuthService */]],
+        bootstrap: [__WEBPACK_IMPORTED_MODULE_10__app_component__["a" /* AppComponent */]],
+        schemas: [__WEBPACK_IMPORTED_MODULE_1__angular_core__["NO_ERRORS_SCHEMA"]]
     })
 ], AppModule);
 
@@ -514,7 +523,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/login/login.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container mt-5 mb-5 border\">\r\n    <div class=\"\">\r\n        <h3 class=\"text-center mt-2\">Login</h3>\r\n        <p class=\"text-secondary text-center\">\r\n            <!-- Dude if you will be logged in we can show you your progress. -->\r\n        </p>\r\n    </div>\r\n    <div *ngIf=\"isLoginError\" class=\"alert alert-danger mt-2\">\r\n        Invalid login or password. Please try again.\r\n    </div>\r\n    <form method=\"post\" class=\"register\" #loginForm=\"ngForm\" novalidate=\"novalidate\">\r\n        <div class=\"form-row\">\r\n            <div class=\"form-group col-md-12\">\r\n                <label for=\"inputEmail\">Email<span class=\"text-danger\">*</span></label>\r\n                <div class=\"input-group\">\r\n                    <span class=\"input-group-addon text-secondary\" [class]=\"\"><fa [name]=\"'user'\" [size]=\"1\"></fa></span>\r\n                    <input #email=\"ngModel\" [(ngModel)]=\"model.email\" name=\"email\" type=\"text\" class=\"form-control\" id=\"inputEmail\" placeholder=\"Email\" [pattern]=\"utilityService.pattern.email\" required>\r\n                </div>\r\n                <div *ngIf=\"email.invalid && (email.dirty || email.touched)\" class=\"alert alert-danger mt-2\">\r\n                    <div *ngIf=\"email.errors.pattern && !email.errors.required\">\r\n                        Wrong email format.\r\n                    </div>\r\n                    <div *ngIf=\"email.errors.required\">\r\n                        Email is required.\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <div class=\"form-row\">\r\n            <div class=\"form-group col-md-12\">\r\n                <label for=\"inputPassword\">Password<span class=\"text-danger\">*</span></label>\r\n                <div class=\"input-group\">\r\n                    <span class=\"input-group-addon text-secondary\"><fa [name]=\"'lock'\" [size]=\"1\"></fa></span>\r\n                    <input #password=\"ngModel\" [(ngModel)]=\"model.password\" name=\"password\" type=\"password\" class=\"form-control\" id=\"inputPassword\" placeholder=\"Password\" [pattern]=\"utilityService.pattern.password\" required>\r\n                </div>\r\n                <div *ngIf=\"password.invalid && (password.dirty || password.touched)\" class=\"alert alert-danger mt-2\">\r\n                    <div *ngIf=\"password.errors.pattern && !password.errors.required\">\r\n                        Wrong password format minimum 6 and max 14 characters.\r\n                    </div>\r\n                    <div *ngIf=\"password.errors.required\">\r\n                        Password is required.\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <div class=\"form-row\">\r\n            <div class=\"form-group col-md-12 text-center\">\r\n                <button (click)=\"login(loginForm)\" type=\"button\" class=\"btn btn-success\" [disabled]=\"!loginForm.valid\"><fa [name]=\"'sign-in'\" [size]=\"1\"></fa>Login</button>\r\n                <hr class=\"divider\">\r\n            </div>\r\n        </div>\r\n    </form>\r\n    <p class=\"text-secondary text-center\">Or sign up with:</p>\r\n    <app-auth></app-auth>\r\n    <p class=\"text-secondary text-center small\">By clicking \"Sign up\" you agree to our <a href=\"#\">Terms of Service</a>.</p>\r\n    <p class=\"text-secondary text-center small\">New to fl.org? <a (click)=\"handleSignupClick()\" class=\"text-primary\">Sign up</a></p>\r\n    <!-- <div *ngIf=\"afService.user | async as user\">\r\n        <h3>Hello {{user.displayName}}</h3>\r\n        <img [src]=\"user.photoURL\">\r\n        <button (click)=\"afService.logout()\">Logout</button>\r\n    </div> -->\r\n</div>"
+module.exports = "<div class=\"container mt-5 mb-5 border\">\r\n    <div class=\"\">\r\n        <h3 class=\"text-center mt-2\">Login</h3>\r\n        <p class=\"text-secondary text-center\">\r\n            <!-- Dude if you will be logged in we can show you your progress. -->\r\n        </p>\r\n    </div>\r\n    <div *ngIf=\"isLoginError\" class=\"alert alert-danger mt-2\">\r\n        Invalid login or password. Please try again.\r\n    </div>\r\n    <form method=\"post\" class=\"register\" #loginForm=\"ngForm\" novalidate=\"novalidate\">\r\n        <div class=\"form-row\">\r\n            <div class=\"form-group col-md-12\">\r\n                <label for=\"inputEmail\">Email<span class=\"text-danger\">*</span></label>\r\n                <div class=\"input-group\">\r\n                    <span class=\"input-group-addon text-secondary\" [class]=\"\"><fa [name]=\"'user'\" [size]=\"1\"></fa></span>\r\n                    <input #email=\"ngModel\" [(ngModel)]=\"model.email\" name=\"email\" type=\"text\" class=\"form-control\" id=\"inputEmail\" placeholder=\"Email\" [pattern]=\"utilityService.pattern.email\" required>\r\n                </div>\r\n                <div *ngIf=\"email.invalid && (email.dirty || email.touched)\" class=\"alert alert-danger mt-2\">\r\n                    <div *ngIf=\"email.errors.pattern && !email.errors.required\">\r\n                        Wrong email format.\r\n                    </div>\r\n                    <div *ngIf=\"email.errors.required\">\r\n                        Email is required.\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <div class=\"form-row\">\r\n            <div class=\"form-group col-md-12\">\r\n                <label for=\"inputPassword\">Password<span class=\"text-danger\">*</span></label>\r\n                <div class=\"input-group\">\r\n                    <span class=\"input-group-addon text-secondary\"><fa [name]=\"'lock'\" [size]=\"1\"></fa></span>\r\n                    <input #password=\"ngModel\" [(ngModel)]=\"model.password\" name=\"password\" type=\"password\" class=\"form-control\" id=\"inputPassword\" placeholder=\"Password\" [pattern]=\"utilityService.pattern.password\" required>\r\n                </div>\r\n                <div *ngIf=\"password.invalid && (password.dirty || password.touched)\" class=\"alert alert-danger mt-2\">\r\n                    <div *ngIf=\"password.errors.pattern && !password.errors.required\">\r\n                        Wrong password format minimum 6 and max 14 characters.\r\n                    </div>\r\n                    <div *ngIf=\"password.errors.required\">\r\n                        Password is required.\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <div class=\"form-row\">\r\n            <div class=\"form-group col-md-12 text-center\">\r\n                <button (click)=\"onLoginSubmit(loginForm)\" type=\"button\" class=\"btn btn-success\" [disabled]=\"!loginForm.valid\"><fa [name]=\"'sign-in'\" [size]=\"1\"></fa>Login</button>\r\n                <hr class=\"divider\">\r\n            </div>\r\n        </div>\r\n    </form>\r\n    <p class=\"text-secondary text-center\">Or sign up with:</p>\r\n    <app-auth></app-auth>\r\n    <p class=\"text-secondary text-center small\">By clicking \"Sign up\" you agree to our <a href=\"#\">Terms of Service</a>.</p>\r\n    <p class=\"text-secondary text-center small\">New to fl.org? <a (click)=\"handleSignupClick()\" class=\"text-primary\">Sign up</a></p>\r\n    <!-- <div *ngIf=\"afService.user | async as user\">\r\n        <h3>Hello {{user.displayName}}</h3>\r\n        <img [src]=\"user.photoURL\">\r\n        <button (click)=\"afService.logout()\">Logout</button>\r\n    </div> -->\r\n</div>"
 
 /***/ }),
 
@@ -527,8 +536,9 @@ module.exports = "<div class=\"container mt-5 mb-5 border\">\r\n    <div class=\
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common_http__ = __webpack_require__("../../../common/@angular/common/http.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__user_login__ = __webpack_require__("../../../../../src/app/user-login.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__shared_routing_service__ = __webpack_require__("../../../../../src/app/shared/routing.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared_utility_service__ = __webpack_require__("../../../../../src/app/shared/utility.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__shared_auth_service__ = __webpack_require__("../../../../../src/app/shared/auth.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared_routing_service__ = __webpack_require__("../../../../../src/app/shared/routing.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__shared_utility_service__ = __webpack_require__("../../../../../src/app/shared/utility.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -545,13 +555,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 // import { AuthenticationService } from '../shared/authentication.service';
 
 
+
 var LoginComponent = (function () {
     function LoginComponent(httpClient, router, 
         // public afService: AuthenticationService,
+        authService, 
         // private toastr: ToastrService,
         routingService, utilityService) {
         this.httpClient = httpClient;
         this.router = router;
+        this.authService = authService;
         this.routingService = routingService;
         this.utilityService = utilityService;
         this.onSignupClick = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
@@ -562,6 +575,29 @@ var LoginComponent = (function () {
     };
     LoginComponent.prototype.handleSignupClick = function () {
         this.onSignupClick.emit();
+    };
+    LoginComponent.prototype.onLoginSubmit = function (loginForm) {
+        var _this = this;
+        var user = {
+            email: this.model.email,
+            password: this.model.password
+        };
+        this.authService.authenticateUser(user).subscribe(function (data) {
+            if (data.success) {
+                console.log(data);
+                _this.isLoginError = false;
+                _this.resetForm(loginForm);
+                _this.authService.storeUserData(data.token, data.user);
+                _this.routingService.goto('/practice');
+                // this.flashMessage.show('You are now logged in', {cssClass: 'alert-success', timeout: 5000});
+                // this.router.navigate(['dashboard']);
+            }
+            else {
+                console.log('error');
+                // this.flashMessage.show(data.msg, {cssClass: 'alert-danger', timeout: 5000});
+                // this.router.navigate(['login']);
+            }
+        });
     };
     // handleLoginClick() { // post form data to backend
     //   this.httpClient.post('http://localhost:3000/login', this.model)
@@ -617,10 +653,10 @@ LoginComponent = __decorate([
         template: __webpack_require__("../../../../../src/app/login/login.component.html"),
         styles: [__webpack_require__("../../../../../src/app/login/login.component.css")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__angular_common_http__["a" /* HttpClient */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_common_http__["a" /* HttpClient */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__shared_routing_service__["a" /* RoutingService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__shared_routing_service__["a" /* RoutingService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_5__shared_utility_service__["a" /* UtilityService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__shared_utility_service__["a" /* UtilityService */]) === "function" && _d || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__angular_common_http__["a" /* HttpClient */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_common_http__["a" /* HttpClient */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__shared_auth_service__["a" /* AuthService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__shared_auth_service__["a" /* AuthService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_5__shared_routing_service__["a" /* RoutingService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__shared_routing_service__["a" /* RoutingService */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_6__shared_utility_service__["a" /* UtilityService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_6__shared_utility_service__["a" /* UtilityService */]) === "function" && _e || Object])
 ], LoginComponent);
 
-var _a, _b, _c, _d;
+var _a, _b, _c, _d, _e;
 //# sourceMappingURL=login.component.js.map
 
 /***/ }),
@@ -877,6 +913,85 @@ var _a, _b;
 
 /***/ }),
 
+/***/ "../../../../../src/app/shared/auth.service.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuthService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/add/operator/map.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_jwt__ = __webpack_require__("../../../../angular2-jwt/angular2-jwt.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_jwt___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_angular2_jwt__);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var AuthService = (function () {
+    function AuthService(http) {
+        this.http = http;
+        // this.isDev = true;  // Change to false before deployment
+    }
+    AuthService.prototype.registerUser = function (user) {
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["Headers"]();
+        headers.append('Content-Type', 'application/json');
+        return this.http.post('users/register', user, { headers: headers })
+            .map(function (res) { return res.json(); });
+    };
+    AuthService.prototype.authenticateUser = function (user) {
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["Headers"]();
+        headers.append('Content-Type', 'application/json');
+        return this.http.post('users/authenticate', user, { headers: headers })
+            .map(function (res) { return res.json(); });
+    };
+    AuthService.prototype.getProfile = function () {
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["Headers"]();
+        this.loadToken();
+        headers.append('Authorization', this.authToken);
+        headers.append('Content-Type', 'application/json');
+        return this.http.get('users/profile', { headers: headers })
+            .map(function (res) { return res.json(); });
+    };
+    AuthService.prototype.storeUserData = function (token, user) {
+        localStorage.setItem('id_token', token);
+        localStorage.setItem('user', JSON.stringify(user));
+        this.authToken = token;
+        this.user = user;
+    };
+    AuthService.prototype.loadToken = function () {
+        var token = localStorage.getItem('id_token');
+        this.authToken = token;
+    };
+    AuthService.prototype.loggedIn = function () {
+        return Object(__WEBPACK_IMPORTED_MODULE_3_angular2_jwt__["tokenNotExpired"])('id_token');
+    };
+    AuthService.prototype.logout = function () {
+        this.authToken = null;
+        this.user = null;
+        localStorage.clear();
+    };
+    return AuthService;
+}());
+AuthService = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["Http"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["Http"]) === "function" && _a || Object])
+], AuthService);
+
+var _a;
+//# sourceMappingURL=auth.service.js.map
+
+/***/ }),
+
 /***/ "../../../../../src/app/shared/routing.service.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -969,7 +1084,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/signup/signup.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container mt-5 mb-5 border\">\r\n    <div class=\"\">\r\n        <h3 class=\"text-center mt-2\">Sign up</h3>\r\n        <p class=\"text-secondary text-center\">Signup to get started with a brand new learning experience.</p>\r\n    </div>\r\n    <form method=\"post\" class=\"register\" #signupForm=\"ngForm\" novalidate=\"novalidate\">\r\n        <div class=\"form-row\">\r\n            <div class=\"form-group col-md-6\">\r\n                <label for=\"inputFname\">First Name <span class=\"text-danger\">*</span></label>\r\n                <input #firstName=\"ngModel\" [(ngModel)]=\"model.firstName\" name=\"firstName\" type=\"text\" class=\"form-control\" id=\"inputFname\" placeholder=\"First Name\" required>\r\n                <div *ngIf=\"firstName.invalid && (firstName.dirty || firstName.touched)\" class=\"alert alert-danger mt-2\">\r\n                    <div *ngIf=\"firstName.errors.required\">\r\n                        First name is required.\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <div class=\"form-group col-md-6\">\r\n                <label for=\"inputLname\">Last Name <span class=\"text-danger\">*</span></label>\r\n                <input #lastName=\"ngModel\" [(ngModel)]=\"model.lastName\" name=\"lastName\" type=\"text\" class=\"form-control\" id=\"inputLname\" placeholder=\"Last Name\" required>\r\n                <div *ngIf=\"lastName.invalid && (lastName.dirty || lastName.touched)\" class=\"alert alert-danger mt-2\">\r\n                    <div *ngIf=\"lastName.errors.required\">\r\n                        Last name is required.\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <div class=\"form-row\">\r\n            <div class=\"form-group col-md-12\">\r\n                <label for=\"inputEmail\">Email address <span class=\"text-danger\">*</span></label>\r\n                <div class=\"input-group\">\r\n                    <span class=\"input-group-addon\"><fa [name]=\"'envelope'\" [size]=\"1\"></fa></span>\r\n                    <input #email=\"ngModel\" [(ngModel)]=\"model.email\" name=\"email\" type=\"email\" class=\"form-control\" id=\"inputEmail\" placeholder=\"Email address\" [pattern]=\"utilityService.pattern.email\" required>\r\n                </div>\r\n                <div *ngIf=\"email.invalid && (email.dirty || email.touched)\" class=\"alert alert-danger mt-2\">\r\n                    <div *ngIf=\"email.errors.pattern && !email.errors.required\">\r\n                        Wrong email format.\r\n                    </div>\r\n                    <div *ngIf=\"email.errors.required\">\r\n                        Email is required.\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <div class=\"form-row\">\r\n            <div class=\"form-group col-md-12\">\r\n                <label for=\"inputPassword\">Password <span class=\"text-danger\">*</span></label>\r\n                <div class=\"input-group\">\r\n                    <span class=\"input-group-addon\"><fa [name]=\"'lock'\" [size]=\"1\"></fa></span>\r\n                    <input #password=\"ngModel\" [(ngModel)]=\"model.password\" name=\"password\" type=\"password\" class=\"form-control\" id=\"inputPassword\" placeholder=\"Password\" [pattern]=\"utilityService.pattern.password\" required>\r\n                </div>\r\n                <div *ngIf=\"password.invalid && (password.dirty || password.touched)\" class=\"alert alert-danger mt-2\">\r\n                    <div *ngIf=\"password.errors.pattern && !password.errors.required\">\r\n                        Wrong password format minimum 6 and max 14 characters.\r\n                    </div>\r\n                    <div *ngIf=\"password.errors.required\">\r\n                        Password is required.\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <!-- <div class=\"form-row\">\r\n            <div class=\"form-group col-md-12\">\r\n                <label for=\"inputPassword\">Confirm password <span class=\"text-danger\">*</span></label>\r\n                <div class=\"input-group\">\r\n                    <span class=\"input-group-addon\"><fa [name]=\"'lock'\" [size]=\"1\"></fa></span>\r\n                    <input validate [disabled]=\"password.invalid\" #confirmPassword=\"ngModel\" [(ngModel)]=\"model.confirmPassword\" name=\"confirmPassword\" type=\"password\" class=\"form-control\" id=\"inputConfirmPassword\" placeholder=\"Confirm password\" required>\r\n                </div>\r\n                <div *ngIf=\"confirmPassword.invalid && (confirmPassword.dirty || confirmPassword.touched)\" class=\"alert alert-danger mt-2\">\r\n                    <div *ngIf=\"confirmPassword.errors.required\">\r\n                        confirmPassword is required.\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div> -->\r\n        <div class=\"form-row\">\r\n            <div class=\"form-group col-md-12 text-center\">\r\n                <button type=\"button\" class=\"btn btn-success\" [disabled]=\"!signupForm.valid\" (click)=\"signup(signupForm)\">Sign Up</button>\r\n                <hr class=\"divider\">\r\n            </div>\r\n        </div>\r\n    </form>\r\n    <p class=\"text-secondary text-center\">Or sign up with:</p>\r\n    <app-auth></app-auth>\r\n    <p class=\"text-secondary text-center small\">By clicking \"Sign up\" you agree to our <a href=\"#\">Terms of Service</a>.</p>\r\n    <p class=\"text-secondary text-center small\">Already have an account? <a (click)=\"handleSigninClick(signupForm)\" class=\"text-primary\">Sign in</a></p>\r\n</div>"
+module.exports = "<div class=\"container mt-5 mb-5 border\">\r\n    <div class=\"\">\r\n        <h3 class=\"text-center mt-2\">Sign up</h3>\r\n        <p class=\"text-secondary text-center\">Signup to get started with a brand new learning experience.</p>\r\n    </div>\r\n    <form method=\"post\" class=\"register\" #signupForm=\"ngForm\" novalidate=\"novalidate\">\r\n        <div class=\"form-row\">\r\n            <div class=\"form-group col-md-6\">\r\n                <label for=\"inputFname\">First Name <span class=\"text-danger\">*</span></label>\r\n                <input #firstName=\"ngModel\" [(ngModel)]=\"model.firstName\" name=\"firstName\" type=\"text\" class=\"form-control\" id=\"inputFname\" placeholder=\"First Name\" required>\r\n                <div *ngIf=\"firstName.invalid && (firstName.dirty || firstName.touched)\" class=\"alert alert-danger mt-2\">\r\n                    <div *ngIf=\"firstName.errors.required\">\r\n                        First name is required.\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <div class=\"form-group col-md-6\">\r\n                <label for=\"inputLname\">Last Name <span class=\"text-danger\">*</span></label>\r\n                <input #lastName=\"ngModel\" [(ngModel)]=\"model.lastName\" name=\"lastName\" type=\"text\" class=\"form-control\" id=\"inputLname\" placeholder=\"Last Name\" required>\r\n                <div *ngIf=\"lastName.invalid && (lastName.dirty || lastName.touched)\" class=\"alert alert-danger mt-2\">\r\n                    <div *ngIf=\"lastName.errors.required\">\r\n                        Last name is required.\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <div class=\"form-row\">\r\n            <div class=\"form-group col-md-12\">\r\n                <label for=\"inputEmail\">Email address <span class=\"text-danger\">*</span></label>\r\n                <div class=\"input-group\">\r\n                    <span class=\"input-group-addon\"><fa [name]=\"'envelope'\" [size]=\"1\"></fa></span>\r\n                    <input #email=\"ngModel\" [(ngModel)]=\"model.email\" name=\"email\" type=\"email\" class=\"form-control\" id=\"inputEmail\" placeholder=\"Email address\" [pattern]=\"utilityService.pattern.email\" required>\r\n                </div>\r\n                <div *ngIf=\"email.invalid && (email.dirty || email.touched)\" class=\"alert alert-danger mt-2\">\r\n                    <div *ngIf=\"email.errors.pattern && !email.errors.required\">\r\n                        Wrong email format.\r\n                    </div>\r\n                    <div *ngIf=\"email.errors.required\">\r\n                        Email is required.\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <div class=\"form-row\">\r\n            <div class=\"form-group col-md-12\">\r\n                <label for=\"inputPassword\">Password <span class=\"text-danger\">*</span></label>\r\n                <div class=\"input-group\">\r\n                    <span class=\"input-group-addon\"><fa [name]=\"'lock'\" [size]=\"1\"></fa></span>\r\n                    <input #password=\"ngModel\" [(ngModel)]=\"model.password\" name=\"password\" type=\"password\" class=\"form-control\" id=\"inputPassword\" placeholder=\"Password\" [pattern]=\"utilityService.pattern.password\" required>\r\n                </div>\r\n                <div *ngIf=\"password.invalid && (password.dirty || password.touched)\" class=\"alert alert-danger mt-2\">\r\n                    <div *ngIf=\"password.errors.pattern && !password.errors.required\">\r\n                        Wrong password format minimum 6 and max 14 characters.\r\n                    </div>\r\n                    <div *ngIf=\"password.errors.required\">\r\n                        Password is required.\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <!-- <div class=\"form-row\">\r\n            <div class=\"form-group col-md-12\">\r\n                <label for=\"inputPassword\">Confirm password <span class=\"text-danger\">*</span></label>\r\n                <div class=\"input-group\">\r\n                    <span class=\"input-group-addon\"><fa [name]=\"'lock'\" [size]=\"1\"></fa></span>\r\n                    <input validate [disabled]=\"password.invalid\" #confirmPassword=\"ngModel\" [(ngModel)]=\"model.confirmPassword\" name=\"confirmPassword\" type=\"password\" class=\"form-control\" id=\"inputConfirmPassword\" placeholder=\"Confirm password\" required>\r\n                </div>\r\n                <div *ngIf=\"confirmPassword.invalid && (confirmPassword.dirty || confirmPassword.touched)\" class=\"alert alert-danger mt-2\">\r\n                    <div *ngIf=\"confirmPassword.errors.required\">\r\n                        confirmPassword is required.\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div> -->\r\n        <div class=\"form-row\">\r\n            <div class=\"form-group col-md-12 text-center\">\r\n                <button type=\"button\" class=\"btn btn-success\" [disabled]=\"!signupForm.valid\" (click)=\"onRegisterSubmit(signupForm)\">Sign Up</button>\r\n                <hr class=\"divider\">\r\n            </div>\r\n        </div>\r\n    </form>\r\n    <p class=\"text-secondary text-center\">Or sign up with:</p>\r\n    <app-auth></app-auth>\r\n    <p class=\"text-secondary text-center small\">By clicking \"Sign up\" you agree to our <a href=\"#\">Terms of Service</a>.</p>\r\n    <p class=\"text-secondary text-center small\">Already have an account? <a (click)=\"handleSigninClick(signupForm)\" class=\"text-primary\">Sign in</a></p>\r\n</div>"
 
 /***/ }),
 
@@ -981,7 +1096,8 @@ module.exports = "<div class=\"container mt-5 mb-5 border\">\r\n    <div class=\
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__("../../../common/@angular/common/http.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__user__ = __webpack_require__("../../../../../src/app/user.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_utility_service__ = __webpack_require__("../../../../../src/app/shared/utility.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_auth_service__ = __webpack_require__("../../../../../src/app/shared/auth.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__shared_utility_service__ = __webpack_require__("../../../../../src/app/shared/utility.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -997,12 +1113,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 // import { AuthenticationService } from '../shared/authentication.service';
 
+
 var SignupComponent = (function () {
     function SignupComponent(httpClient, 
         // public afService: AuthenticationService,
+        authService, 
         // private toastr: ToastrService,
         utilityService) {
         this.httpClient = httpClient;
+        this.authService = authService;
         this.utilityService = utilityService;
         this.onSigninClick = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
         this.model = new __WEBPACK_IMPORTED_MODULE_2__user__["a" /* User */]();
@@ -1012,6 +1131,40 @@ var SignupComponent = (function () {
     };
     SignupComponent.prototype.handleSigninClick = function () {
         this.onSigninClick.emit();
+    };
+    SignupComponent.prototype.onRegisterSubmit = function (signupForm) {
+        // const user = {
+        //   name: this.name,
+        //   email: this.email,
+        //   username: this.username,
+        //   password: this.password
+        // }
+        var _this = this;
+        // // Required Fields
+        // if(!this.validateService.validateRegister(user)) {
+        //   this.flashMessage.show('Please fill in all fields', {cssClass: 'alert-danger', timeout: 3000});
+        //   return false;
+        // }
+        // // Validate Email
+        // if(!this.validateService.validateEmail(user.email)) {
+        // this.flashMessage.show('Please use a valid email', {cssClass: 'alert-danger', timeout: 3000});
+        //   return false;
+        // }
+        // Register user
+        this.authService.registerUser(this.model).subscribe(function (data) {
+            if (data.success) {
+                console.log(data);
+                signupForm.resetForm();
+                _this.handleSigninClick();
+                // this.flashMessage.show('You are now registered and can now login', {cssClass: 'alert-success', timeout: 3000});
+                // this.router.navigate(['/login']);
+            }
+            else {
+                console.log('error');
+                // this.flashMessage.show('Something went wrong', {cssClass: 'alert-danger', timeout: 3000});
+                // this.router.navigate(['/register']);
+            }
+        });
     };
     return SignupComponent;
 }());
@@ -1025,10 +1178,10 @@ SignupComponent = __decorate([
         template: __webpack_require__("../../../../../src/app/signup/signup.component.html"),
         styles: [__webpack_require__("../../../../../src/app/signup/signup.component.css")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_common_http__["a" /* HttpClient */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_common_http__["a" /* HttpClient */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__shared_utility_service__["a" /* UtilityService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__shared_utility_service__["a" /* UtilityService */]) === "function" && _b || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_common_http__["a" /* HttpClient */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_common_http__["a" /* HttpClient */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__shared_auth_service__["a" /* AuthService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__shared_auth_service__["a" /* AuthService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__shared_utility_service__["a" /* UtilityService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__shared_utility_service__["a" /* UtilityService */]) === "function" && _c || Object])
 ], SignupComponent);
 
-var _a, _b;
+var _a, _b, _c;
 //# sourceMappingURL=signup.component.js.map
 
 /***/ }),
