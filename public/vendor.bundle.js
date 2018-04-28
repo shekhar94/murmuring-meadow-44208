@@ -24613,6 +24613,186 @@ function toComment(sourceMap) {
 
 /***/ }),
 
+/***/ "../../../../ngx-bootstrap/alert/alert.component.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AlertComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__alert_config__ = __webpack_require__("../../../../ngx-bootstrap/alert/alert.config.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_decorators__ = __webpack_require__("../../../../ngx-bootstrap/utils/decorators.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var AlertComponent = (function () {
+    function AlertComponent(_config, changeDetection) {
+        var _this = this;
+        this.changeDetection = changeDetection;
+        /** Alert type.
+         * Provides one of four bootstrap supported contextual classes:
+         * `success`, `info`, `warning` and `danger`
+         */
+        this.type = 'warning';
+        /** If set, displays an inline "Close" button */
+        this.dismissible = false;
+        /** Is alert visible */
+        this.isOpen = true;
+        /** This event fires immediately after close instance method is called,
+         * $event is an instance of Alert component.
+         */
+        this.onClose = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
+        /** This event fires when alert closed, $event is an instance of Alert component */
+        this.onClosed = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
+        this.classes = '';
+        this.dismissibleChange = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
+        Object.assign(this, _config);
+        this.dismissibleChange.subscribe(function (dismissible) {
+            _this.classes = _this.dismissible ? 'alert-dismissible' : '';
+            _this.changeDetection.markForCheck();
+        });
+    }
+    AlertComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        if (this.dismissOnTimeout) {
+            // if dismissOnTimeout used as attr without binding, it will be a string
+            setTimeout(function () { return _this.close(); }, parseInt(this.dismissOnTimeout, 10));
+        }
+    };
+    // todo: animation ` If the .fade and .in classes are present on the element,
+    // the alert will fade out before it is removed`
+    /**
+     * Closes an alert by removing it from the DOM.
+     */
+    AlertComponent.prototype.close = function () {
+        if (!this.isOpen) {
+            return;
+        }
+        this.onClose.emit(this);
+        this.isOpen = false;
+        this.changeDetection.markForCheck();
+        this.onClosed.emit(this);
+    };
+    AlertComponent.decorators = [
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"], args: [{
+                    selector: 'alert,bs-alert',
+                    template: "<ng-template [ngIf]=\"isOpen\"> <div [class]=\"'alert alert-' + type\" role=\"alert\" [ngClass]=\"classes\"> <ng-template [ngIf]=\"dismissible\"> <button type=\"button\" class=\"close\" aria-label=\"Close\" (click)=\"close()\"> <span aria-hidden=\"true\">&times;</span> <span class=\"sr-only\">Close</span> </button> </ng-template> <ng-content></ng-content> </div> </ng-template> ",
+                    changeDetection: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ChangeDetectionStrategy"].OnPush
+                },] },
+    ];
+    /** @nocollapse */
+    AlertComponent.ctorParameters = function () { return [
+        { type: __WEBPACK_IMPORTED_MODULE_1__alert_config__["a" /* AlertConfig */], },
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ChangeDetectorRef"], },
+    ]; };
+    AlertComponent.propDecorators = {
+        'type': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
+        'dismissible': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
+        'dismissOnTimeout': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
+        'isOpen': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
+        'onClose': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Output"] },],
+        'onClosed': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Output"] },],
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_2__utils_decorators__["a" /* OnChange */])(),
+        __metadata("design:type", Object)
+    ], AlertComponent.prototype, "dismissible", void 0);
+    return AlertComponent;
+}());
+
+//# sourceMappingURL=alert.component.js.map
+
+/***/ }),
+
+/***/ "../../../../ngx-bootstrap/alert/alert.config.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AlertConfig; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+
+var AlertConfig = (function () {
+    function AlertConfig() {
+        /** default alert type */
+        this.type = 'warning';
+        /** is alerts are dismissible by default */
+        this.dismissible = false;
+        /** default time before alert will dismiss */
+        this.dismissOnTimeout = undefined;
+    }
+    AlertConfig.decorators = [
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"] },
+    ];
+    /** @nocollapse */
+    AlertConfig.ctorParameters = function () { return []; };
+    return AlertConfig;
+}());
+
+//# sourceMappingURL=alert.config.js.map
+
+/***/ }),
+
+/***/ "../../../../ngx-bootstrap/alert/alert.module.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AlertModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common__ = __webpack_require__("../../../common/@angular/common.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__alert_component__ = __webpack_require__("../../../../ngx-bootstrap/alert/alert.component.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__alert_config__ = __webpack_require__("../../../../ngx-bootstrap/alert/alert.config.js");
+
+
+
+
+var AlertModule = (function () {
+    function AlertModule() {
+    }
+    AlertModule.forRoot = function () {
+        return { ngModule: AlertModule, providers: [__WEBPACK_IMPORTED_MODULE_3__alert_config__["a" /* AlertConfig */]] };
+    };
+    AlertModule.decorators = [
+        { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"], args: [{
+                    imports: [__WEBPACK_IMPORTED_MODULE_0__angular_common__["CommonModule"]],
+                    declarations: [__WEBPACK_IMPORTED_MODULE_2__alert_component__["a" /* AlertComponent */]],
+                    exports: [__WEBPACK_IMPORTED_MODULE_2__alert_component__["a" /* AlertComponent */]],
+                    entryComponents: [__WEBPACK_IMPORTED_MODULE_2__alert_component__["a" /* AlertComponent */]]
+                },] },
+    ];
+    /** @nocollapse */
+    AlertModule.ctorParameters = function () { return []; };
+    return AlertModule;
+}());
+
+//# sourceMappingURL=alert.module.js.map
+
+/***/ }),
+
+/***/ "../../../../ngx-bootstrap/alert/index.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__alert_component__ = __webpack_require__("../../../../ngx-bootstrap/alert/alert.component.js");
+/* unused harmony reexport AlertComponent */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__alert_module__ = __webpack_require__("../../../../ngx-bootstrap/alert/alert.module.js");
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_1__alert_module__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__alert_config__ = __webpack_require__("../../../../ngx-bootstrap/alert/alert.config.js");
+/* unused harmony reexport AlertConfig */
+
+
+
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
 /***/ "../../../../ngx-bootstrap/component-loader/component-loader.class.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -26416,7 +26596,7 @@ var ProgressbarModule = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* unused harmony export OnChange */
+/* harmony export (immutable) */ __webpack_exports__["a"] = OnChange;
 /*tslint:disable:no-invalid-this */
 function OnChange(defaultValue) {
     var sufix = 'Change';
