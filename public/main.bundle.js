@@ -775,7 +775,7 @@ var PracticeComponent = (function () {
             .set('questionType', this.model.categoryDescription)
             .set('difficulty', this.model.levelDescription);
         this.httpClient
-            .get('http://localhost:3000/questions/getQuestion', { params: params })
+            .get('questions/getQuestions', { params: params })
             .subscribe(function (data) {
             if (Object(__WEBPACK_IMPORTED_MODULE_4_util__["isArray"])(data)) {
                 _this.questions = data;
@@ -1178,8 +1178,6 @@ var SignupComponent = (function () {
             }
             else {
                 _this.utilityService.alertUtil.add('danger', 'Error in signing up. Please try again.', 5000);
-                // this.flashMessage.show('Something went wrong', {cssClass: 'alert-danger', timeout: 3000});
-                // this.router.navigate(['/register']);
             }
         });
     };
