@@ -11,6 +11,7 @@ router.post("/create", (req, res, next) => {
         difficulty: req.body.difficulty,
         question: req.body.question,
         options: req.body.options,
+        explaination: req.body.explaination
     });
     Question.postCreateQuestion(newQuestion, (err, newQuestion) => {
         if (err) {
@@ -20,12 +21,27 @@ router.post("/create", (req, res, next) => {
         }
     });
 });
+router.put("/create", (req, res, next) => {
+    let updatedQuestion = new Question({
+        _id: req.body._id,
+        id: req.body.id,
+        answer: req.body.answer,
+        questionType: req.body.questionType,
+        difficulty: req.body.difficulty,
+        question: req.body.question,
+        options: req.body.options,
+        explaination: req.body.explaination
+    });
+    Question.putCreateQuestion(req.body._id, updatedQuestion, (err, updatedQuestion) => {
+        if (err) {
+            res.json({ success: false, msg: 'Failed to update question' });
+        } else {
+            res.json({ success: true, msg: 'Question updated' });
+        }
+    });
+});
 
 router.get("/getQuestions", (req, res, next) => {
-    // if (_.isEmpty(req.query)) {
-    //     console.log("query parameter missing");
-    //     throw new Error("query parameter missing");
-    // }
     const query = {
         "questionType": req.query.questionType,
         "difficulty": req.query.difficulty

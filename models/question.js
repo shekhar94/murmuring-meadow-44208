@@ -21,6 +21,9 @@ const QuestionSchema = mongoose.Schema({
     },
     answer: {
         type: Number
+    },
+    explaination: {
+        type: String,
     }
 });
 
@@ -29,6 +32,14 @@ const Question = module.exports = mongoose.model('Question', QuestionSchema);
 module.exports.postCreateQuestion = function(newQuestion, callback) {
     newQuestion.save(callback);
 };
+module.exports.putCreateQuestion = function(id, updatedQuestion, callback) {
+    Question.findByIdAndUpdate(id, { $set: updatedQuestion }, { new: true }, callback);
+
+};
+module.exports.getQuestionById = function(id, callback) {
+    Question.findById(id, callback);
+};
+
 module.exports.getQuestions = function(query, callback) {
     // no string notation is needed when called from postman
     Question.find(query, callback);

@@ -162,6 +162,8 @@ var _a, _b;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__footer_footer_component__ = __webpack_require__("../../../../../src/app/footer/footer.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__auth_auth_component__ = __webpack_require__("../../../../../src/app/auth/auth.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__utility_component_alert_alert_component__ = __webpack_require__("../../../../../src/app/utility-component/alert/alert.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__shared_highlight_service__ = __webpack_require__("../../../../../src/app/shared/highlight.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__utility_component_question_question_component__ = __webpack_require__("../../../../../src/app/utility-component/question/question.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -199,6 +201,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
+
 var AppModule = (function () {
     function AppModule() {
     }
@@ -215,7 +219,8 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_17__signup_signup_component__["a" /* SignupComponent */],
             __WEBPACK_IMPORTED_MODULE_21__footer_footer_component__["a" /* FooterComponent */],
             __WEBPACK_IMPORTED_MODULE_22__auth_auth_component__["a" /* AuthComponent */],
-            __WEBPACK_IMPORTED_MODULE_23__utility_component_alert_alert_component__["a" /* AlertComponent */]
+            __WEBPACK_IMPORTED_MODULE_23__utility_component_alert_alert_component__["a" /* AlertComponent */],
+            __WEBPACK_IMPORTED_MODULE_25__utility_component_question_question_component__["a" /* QuestionComponent */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -235,7 +240,7 @@ AppModule = __decorate([
             // AngularFireAuthModule,
             __WEBPACK_IMPORTED_MODULE_3__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */]
         ],
-        providers: [__WEBPACK_IMPORTED_MODULE_19__shared_routing_service__["a" /* RoutingService */], __WEBPACK_IMPORTED_MODULE_20__shared_utility_service__["a" /* UtilityService */], __WEBPACK_IMPORTED_MODULE_18__shared_auth_service__["a" /* AuthService */]],
+        providers: [__WEBPACK_IMPORTED_MODULE_19__shared_routing_service__["a" /* RoutingService */], __WEBPACK_IMPORTED_MODULE_20__shared_utility_service__["a" /* UtilityService */], __WEBPACK_IMPORTED_MODULE_18__shared_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_24__shared_highlight_service__["a" /* HighlightService */]],
         bootstrap: [__WEBPACK_IMPORTED_MODULE_11__app_component__["a" /* AppComponent */]],
         schemas: [__WEBPACK_IMPORTED_MODULE_1__angular_core__["NO_ERRORS_SCHEMA"]]
     })
@@ -311,6 +316,34 @@ AuthComponent = __decorate([
 
 var _a;
 //# sourceMappingURL=auth.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/data/question.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return QDATA; });
+var QDATA = [
+    {
+        'title': 'C Programming',
+        'categories': [
+            { 'id': '1', 'categoryDescription': 'Declarations and Initializations' },
+            { 'id': '2', 'categoryDescription': 'Control Instructions' },
+            { 'id': '3', 'categoryDescription': 'Expressions' },
+            { 'id': '4', 'categoryDescription': 'Floating Point Issues' },
+            { 'id': '5', 'categoryDescription': 'Functions' }
+        ]
+    },
+    {
+        'title': 'Aptitude',
+        'categories': [
+            { 'id': '1', 'categoryDescription': 'Problems on train' },
+            { 'id': '2', 'categoryDescription': 'Permutations and combinations' }
+        ]
+    }
+];
+//# sourceMappingURL=question.js.map
 
 /***/ }),
 
@@ -396,7 +429,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/home/home.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!-- <div class=\"header-row-wrapper ss-l-font\">\r\n    <div class=\"name-wrapper\">\r\n        <a>SHEKHAR SUMAN</a>\r\n    </div>\r\n    <div class=\"header-container\">\r\n        <nav>\r\n            <ul>\r\n                <li class=\"nav-li nav-tab\">\r\n                    <a class=\"\">ABOUT</a>\r\n                </li>\r\n                <li class=\"nav-li active-tab\">\r\n                    <a class=\"\">PODCASTS</a>\r\n                </li>\r\n                <li class=\"nav-li nav-tab\">\r\n                    <a class=\"\">ARTICLES</a>\r\n                </li>\r\n                <li class=\"nav-li nav-tab\">\r\n                    <a class=\"\">COURSES</a>\r\n                </li>\r\n                <li class=\"nav-li nav-tab\">\r\n                    <a class=\"\">PROJECTS</a>\r\n                </li>\r\n                <li class=\"nav-li nav-tab\">\r\n                    <a class=\"\">INNOVATIONS</a>\r\n                </li>\r\n            </ul>\r\n        </nav>\r\n    </div>\r\n</div>\r\n<div class=\"body-wrapper ss-xl-font\">\r\n    <div class=\"podcast-card-wrapper\">\r\n        The Art Of Charm\r\n    </div>\r\n    <div class=\"podcast-card-wrapper\">\r\n        The One You Feed\r\n    </div>\r\n    <div class=\"podcast-card-wrapper\">\r\n        The Art Of Charm\r\n    </div>\r\n    <div class=\"podcast-card-wrapper\">\r\n        The One You Feed\r\n    </div>\r\n    <div class=\"podcast-card-wrapper\">\r\n        The Art Of Charm\r\n    </div>\r\n    <div class=\"podcast-card-wrapper\">\r\n        The One You Feed\r\n    </div>\r\n    <div class=\"podcast-card-wrapper\">\r\n        The Art Of Charm\r\n    </div>\r\n    <div class=\"podcast-card-wrapper\">\r\n        The One You Feed\r\n    </div>\r\n</div> -->\r\n\r\n\r\n<!-- <mat-tab-group>\r\n    <mat-tab label=\"Tab 1\">Content 1</mat-tab>\r\n    <mat-tab label=\"Tab 2\">Content 2</mat-tab>\r\n    <mat-tab label=\"Tab 2\">Content 2</mat-tab>\r\n    <mat-tab label=\"Tab 2\">Content 2</mat-tab>\r\n    <mat-tab label=\"Tab 2\">Content 2</mat-tab>\r\n    <mat-tab label=\"Tab 2\">Content 2</mat-tab>\r\n</mat-tab-group> -->\r\n<nav class=\"navbar navbar-expand-lg navbar-dark bg-primary\">\r\n    <a class=\"navbar-brand\" href=\"#\">fl.org</a>\r\n    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n    <span class=\"navbar-toggler-icon\"></span>\r\n  </button>\r\n\r\n    <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\r\n        <ul class=\"navbar-nav mr-auto\">\r\n            <li class=\"nav-item\">\r\n                <a class=\"nav-link\" href=\"#\" routerLink=\"/home\">Home</a>\r\n            </li>\r\n            <li class=\"nav-item  active\">\r\n                <a class=\"nav-link\" href=\"#\" routerLink=\"/practice\">Practice</a>\r\n            </li>\r\n            <li class=\"nav-item\">\r\n                <a class=\"nav-link\" href=\"#\">Candidate experience</a>\r\n            </li>\r\n            <li class=\"nav-item\">\r\n                <a class=\"nav-link\" href=\"#\">Interview questions</a>\r\n            </li>\r\n            <li class=\"nav-item\">\r\n                <a class=\"nav-link\" href=\"#\">Placement papers</a>\r\n            </li>\r\n            <li class=\"nav-item\">\r\n                <a class=\"nav-link\" href=\"#\">Interests</a>\r\n            </li>\r\n            <li class=\"nav-item\">\r\n                <a class=\"nav-link\" href=\"#\">Feedback</a>\r\n            </li>\r\n            <li class=\"nav-item\">\r\n                <a class=\"nav-link\" href=\"#\">Forum</a>\r\n            </li>\r\n            <li class=\"nav-item\">\r\n                <a class=\"nav-link active\" href=\"#\">Your score: 500 (Ranking 1)</a>\r\n            </li>\r\n        </ul>\r\n    </div>\r\n</nav>\r\n<router-outlet></router-outlet>\r\n\r\n<div class=\"container\">\r\n    <div class=\"card col-sm\">\r\n        <div class=\"card-body\">\r\n            <h5 class=\"card-title\">Aptitude</h5>\r\n        </div>\r\n        <div class=\"card-body\">\r\n            <label for=\"catFormControlSelect1\">Choose category</label>\r\n            <select class=\"form-control\" id=\"catFormControlSelect1\">\r\n            <option>Problems on train</option>\r\n            <option>Permutations and combinations</option>\r\n          </select>\r\n            <label for=\"diffFormControlSelect1\">Difficulty</label>\r\n            <select class=\"form-control\" id=\"diffFormControlSelect1\">\r\n            <option>Easy</option>\r\n            <option>Medium</option>\r\n            <option>Hard</option>\r\n          </select>\r\n        </div>\r\n        <div class=\"card-body\">\r\n            <button type=\"button\" class=\"btn btn-outline-primary\">Next</button>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<div class=\"container-fluid\">\r\n    <div class=\"card text-right w-100\" style=\"width: 18rem;\">\r\n        <div class=\"card-body\">\r\n            <h5 class=\"card-title\">SSC examination date</h5>\r\n            <p class=\"card-text\">SSC declared examination dates for next exam.</p>\r\n            <a href=\"#\" class=\"btn btn-primary\">Wanna know complete story</a>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<!-- Question model -->\r\n<button type=\"button\" class=\"btn btn-primary\" data-toggle=\"modal\" data-backdrop=\"static\" data-keyboard=\"false\" data-target=\"#exampleModalCenter\">\r\n  Start test\r\n</button>\r\n<div class=\"modal fade\" id=\"exampleModalCenter\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"exampleModalCenterTitle\" aria-hidden=\"true\">\r\n    <div class=\"modal-dialog modal-dialog-centered\" role=\"document\">\r\n        <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n                <h5 class=\"modal-title\" id=\"exampleModalLongTitle\">New question</h5>\r\n            </div>\r\n            <div class=\"modal-body\">\r\n                <p class=\"text-left\">Left aligned text on all viewport sizes ggggg gggggg ggggggggg ggggggg gggggggggggg ggggggggggg gggggggggggg gggggggggggggggg.\r\n                </p>\r\n                <hr /> Option 1\r\n                <hr /> Option 2\r\n                <hr /> Option 3\r\n                <hr /> Option 4\r\n                <hr />\r\n                <div class=\"container\">\r\n                    <p>\r\n                        <a class=\"btn btn-outline-danger\" data-toggle=\"collapse\" href=\"#multiCollapseExample1\" role=\"button\" aria-expanded=\"false\" aria-controls=\"multiCollapseExample1\">View answer</a>\r\n                    </p>\r\n                    <p class=\"text-danger\">This will reduce your score please try your best before viewing the answer</p>\r\n                    <div class=\"collapse multi-collapse\" id=\"multiCollapseExample1\">\r\n                        <div class=\"card card-body\">\r\n                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <hr />\r\n                <div class=\"progress\">\r\n                    <div class=\"progress-bar bg-danger progress-bar-animated progress-bar-striped\" role=\"progressbar\" style=\"width: 15%\" aria-valuenow=\"15\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\r\n                    <div class=\"progress-bar bg-success progress-bar-animated progress-bar-striped\" role=\"progressbar\" style=\"width: 30%\" aria-valuenow=\"30\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\r\n                </div>\r\n            </div>\r\n            <div class=\"modal-footer\">\r\n                <button type=\"button\" class=\"btn btn-outline-danger\" data-dismiss=\"modal\">End practice</button>\r\n                <button type=\"button\" class=\"btn btn-outline-primary\">Next question</button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n<!-- Question model end -->\r\n<button type=\"button\" class=\"btn btn-primary\" data-toggle=\"modal\" data-backdrop=\"static\" data-keyboard=\"false\" data-target=\"#resultModalCenter\">\r\n      View result\r\n</button>\r\n<div class=\"modal fade\" id=\"resultModalCenter\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"resultModalCenterTitle\" aria-hidden=\"true\">\r\n    <div class=\"modal-dialog modal-dialog-centered\" role=\"document\">\r\n        <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n                <p class=\"text-success\">Correct: 4</p>\r\n                <p class=\"text-danger\">Wrong: 5</p>\r\n                <p class=\"text-secondary\">Not attempted: 1</p>\r\n            </div>\r\n            <div class=\"modal-body\">\r\n                <div class=\"progress\">\r\n                    <div class=\"progress-bar bg-danger\" role=\"progressbar\" style=\"width: 15%\" aria-valuenow=\"15\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\r\n                    <div class=\"progress-bar bg-success\" role=\"progressbar\" style=\"width: 30%\" aria-valuenow=\"30\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\r\n                </div>\r\n\r\n                <div class=\"container\">\r\n                    <p class=\"text-success\">Congratulations you have completed the set!</p>\r\n                </div>\r\n            </div>\r\n            <div class=\"modal-footer\">\r\n                <button type=\"button\" class=\"btn btn-outline-primary\" data-dismiss=\"modal\">Practice next set</button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<!-- Category selection alert -->\r\n<button type=\"button\" class=\"btn btn-primary\" data-toggle=\"modal\" data-backdrop=\"static\" data-keyboard=\"false\" data-target=\"#catModalCenter\">\r\n      Category\r\n</button>\r\n<div class=\"modal fade\" id=\"catModalCenter\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"catModalCenterTitle\" aria-hidden=\"true\">\r\n    <div class=\"modal-dialog modal-dialog-centered\" role=\"document\">\r\n        <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n                Confirmation\r\n            </div>\r\n            <div class=\"modal-body\">\r\n                <div class=\"container\">\r\n                    <p class=\"text-success\">Hi you have selected problems on train with category hard are you ready for challenge!</p>\r\n                </div>\r\n            </div>\r\n            <div class=\"modal-footer\">\r\n                <button type=\"button\" class=\"btn btn-outline-success\" data-dismiss=\"modal\">I'm ready let the war begin..</button>\r\n            </div>\r\n            <div class=\"modal-footer\">\r\n                <button type=\"button\" class=\"btn btn-outline-primary\" data-dismiss=\"modal\">I wanna change settings.....</button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
+module.exports = "<!-- <div class=\"header-row-wrapper ss-l-font\">\r\n    <div class=\"name-wrapper\">\r\n        <a>SHEKHAR SUMAN</a>\r\n    </div>\r\n    <div class=\"header-container\">\r\n        <nav>\r\n            <ul>\r\n                <li class=\"nav-li nav-tab\">\r\n                    <a class=\"\">ABOUT</a>\r\n                </li>\r\n                <li class=\"nav-li active-tab\">\r\n                    <a class=\"\">PODCASTS</a>\r\n                </li>\r\n                <li class=\"nav-li nav-tab\">\r\n                    <a class=\"\">ARTICLES</a>\r\n                </li>\r\n                <li class=\"nav-li nav-tab\">\r\n                    <a class=\"\">COURSES</a>\r\n                </li>\r\n                <li class=\"nav-li nav-tab\">\r\n                    <a class=\"\">PROJECTS</a>\r\n                </li>\r\n                <li class=\"nav-li nav-tab\">\r\n                    <a class=\"\">INNOVATIONS</a>\r\n                </li>\r\n            </ul>\r\n        </nav>\r\n    </div>\r\n</div>\r\n<div class=\"body-wrapper ss-xl-font\">\r\n    <div class=\"podcast-card-wrapper\">\r\n        The Art Of Charm\r\n    </div>\r\n    <div class=\"podcast-card-wrapper\">\r\n        The One You Feed\r\n    </div>\r\n    <div class=\"podcast-card-wrapper\">\r\n        The Art Of Charm\r\n    </div>\r\n    <div class=\"podcast-card-wrapper\">\r\n        The One You Feed\r\n    </div>\r\n    <div class=\"podcast-card-wrapper\">\r\n        The Art Of Charm\r\n    </div>\r\n    <div class=\"podcast-card-wrapper\">\r\n        The One You Feed\r\n    </div>\r\n    <div class=\"podcast-card-wrapper\">\r\n        The Art Of Charm\r\n    </div>\r\n    <div class=\"podcast-card-wrapper\">\r\n        The One You Feed\r\n    </div>\r\n</div> -->\r\n\r\n\r\n<!-- <mat-tab-group>\r\n    <mat-tab label=\"Tab 1\">Content 1</mat-tab>\r\n    <mat-tab label=\"Tab 2\">Content 2</mat-tab>\r\n    <mat-tab label=\"Tab 2\">Content 2</mat-tab>\r\n    <mat-tab label=\"Tab 2\">Content 2</mat-tab>\r\n    <mat-tab label=\"Tab 2\">Content 2</mat-tab>\r\n    <mat-tab label=\"Tab 2\">Content 2</mat-tab>\r\n</mat-tab-group> -->\r\n<nav class=\"navbar navbar-expand-lg navbar-dark bg-primary\">\r\n    <a class=\"navbar-brand\" href=\"#\">fl.org</a>\r\n    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n    <span class=\"navbar-toggler-icon\"></span>\r\n  </button>\r\n\r\n    <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\r\n        <ul class=\"navbar-nav mr-auto\">\r\n            <li class=\"nav-item\">\r\n                <a class=\"nav-link\" href=\"#\" routerLink=\"/home\">Home</a>\r\n            </li>\r\n            <li class=\"nav-item  active\">\r\n                <a class=\"nav-link\" href=\"#\" routerLink=\"/practice\">Practice</a>\r\n            </li>\r\n            <li class=\"nav-item\">\r\n                <a class=\"nav-link\" href=\"#\">Candidate experience</a>\r\n            </li>\r\n            <li class=\"nav-item\">\r\n                <a class=\"nav-link\" href=\"#\">Interview questions</a>\r\n            </li>\r\n            <li class=\"nav-item\">\r\n                <a class=\"nav-link\" href=\"#\">Placement papers</a>\r\n            </li>\r\n            <li class=\"nav-item\">\r\n                <a class=\"nav-link\" href=\"#\">Interests</a>\r\n            </li>\r\n            <li class=\"nav-item\">\r\n                <a class=\"nav-link\" href=\"#\">Feedback</a>\r\n            </li>\r\n            <li class=\"nav-item\">\r\n                <a class=\"nav-link\" href=\"#\">Forum</a>\r\n            </li>\r\n            <li class=\"nav-item\">\r\n                <a class=\"nav-link active\" href=\"#\">Your score: 500 (Ranking 1)</a>\r\n            </li>\r\n        </ul>\r\n    </div>\r\n</nav>\r\n<router-outlet></router-outlet>\r\n\r\n<div class=\"container\">\r\n    <div class=\"card col-sm\">\r\n        <div class=\"card-body\">\r\n            <h5 class=\"card-title\">Aptitude</h5>\r\n        </div>\r\n        <div class=\"card-body\">\r\n            <label for=\"catFormControlSelect1\">Choose category</label>\r\n            <select class=\"form-control\" id=\"catFormControlSelect1\">\r\n            <option>Problems on train</option>\r\n            <option>Permutations and combinations</option>\r\n          </select>\r\n            <label for=\"diffFormControlSelect1\">Difficulty</label>\r\n            <select class=\"form-control\" id=\"diffFormControlSelect1\">\r\n            <option>Easy</option>\r\n            <option>Medium</option>\r\n            <option>Hard</option>\r\n          </select>\r\n        </div>\r\n        <div class=\"card-body\">\r\n            <button type=\"button\" class=\"btn btn-outline-primary\">Next</button>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<div class=\"container-fluid\">\r\n    <div class=\"card text-right w-100\" style=\"width: 18rem;\">\r\n        <div class=\"card-body\">\r\n            <h5 class=\"card-title\">SSC examination date</h5>\r\n            <p class=\"card-text\">SSC declared examination dates for next exam.</p>\r\n            <a href=\"#\" class=\"btn btn-primary\">Wanna know complete story</a>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<!-- Question model -->\r\n<button type=\"button\" class=\"btn btn-primary\" data-toggle=\"modal\" data-backdrop=\"static\" data-keyboard=\"false\" data-target=\"#exampleModalCenter\">\r\n  Start test\r\n</button>\r\n<div class=\"modal fade\" id=\"exampleModalCenter\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"exampleModalCenterTitle\" aria-hidden=\"true\">\r\n    <div class=\"modal-dialog modal-dialog-centered\" role=\"document\">\r\n        <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n                <h5 class=\"modal-title\" id=\"exampleModalLongTitle\">New question</h5>\r\n            </div>\r\n            <div class=\"modal-body\">\r\n                <div class=\"text-left\">\r\n                    <pre class=\"lang-c line-numbers mt-0 mb-0\">\r\n                    <code>\r\n                            main() {{'{'}} \r\n                                int a = 10; \r\n                                float b = 34.8; \r\n                            {{'}'}}\r\n                        </code>\r\n                    </pre>\r\n                </div>\r\n                <!-- <hr /> Option 1\r\n                <hr /> Option 2\r\n                <hr /> Option 3\r\n                <hr /> Option 4\r\n                <hr /> -->\r\n                <div class=\"container\">\r\n                    <p>\r\n                        <a class=\"btn btn-outline-danger\" data-toggle=\"collapse\" href=\"#multiCollapseExample1\" role=\"button\" aria-expanded=\"false\" aria-controls=\"multiCollapseExample1\">View answer</a>\r\n                    </p>\r\n                    <p class=\"text-danger\">This will reduce your score please try your best before viewing the answer</p>\r\n                    <div class=\"collapse multi-collapse\" id=\"multiCollapseExample1\">\r\n                        <div class=\"card card-body\">\r\n                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <hr />\r\n                <div class=\"progress\">\r\n                    <div class=\"progress-bar bg-danger progress-bar-animated progress-bar-striped\" role=\"progressbar\" style=\"width: 15%\" aria-valuenow=\"15\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\r\n                    <div class=\"progress-bar bg-success progress-bar-animated progress-bar-striped\" role=\"progressbar\" style=\"width: 30%\" aria-valuenow=\"30\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\r\n                </div>\r\n            </div>\r\n            <div class=\"modal-footer\">\r\n                <button type=\"button\" class=\"btn btn-outline-danger\" data-dismiss=\"modal\">End practice</button>\r\n                <button type=\"button\" class=\"btn btn-outline-primary\">Next question</button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n<!-- Question model end -->\r\n<button type=\"button\" class=\"btn btn-primary\" data-toggle=\"modal\" data-backdrop=\"static\" data-keyboard=\"false\" data-target=\"#resultModalCenter\">\r\n      View result\r\n</button>\r\n<div class=\"modal fade\" id=\"resultModalCenter\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"resultModalCenterTitle\" aria-hidden=\"true\">\r\n    <div class=\"modal-dialog modal-dialog-centered\" role=\"document\">\r\n        <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n                <p class=\"text-success\">Correct: 4</p>\r\n                <p class=\"text-danger\">Wrong: 5</p>\r\n                <p class=\"text-secondary\">Not attempted: 1</p>\r\n            </div>\r\n            <div class=\"modal-body\">\r\n                <div class=\"progress\">\r\n                    <div class=\"progress-bar bg-danger\" role=\"progressbar\" style=\"width: 15%\" aria-valuenow=\"15\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\r\n                    <div class=\"progress-bar bg-success\" role=\"progressbar\" style=\"width: 30%\" aria-valuenow=\"30\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\r\n                </div>\r\n\r\n                <div class=\"container\">\r\n                    <p class=\"text-success\">Congratulations you have completed the set!</p>\r\n                </div>\r\n            </div>\r\n            <div class=\"modal-footer\">\r\n                <button type=\"button\" class=\"btn btn-outline-primary\" data-dismiss=\"modal\">Practice next set</button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n<!-- /// -->\r\n\r\n<!-- /// -->\r\n<!-- Category selection alert -->\r\n<button type=\"button\" class=\"btn btn-primary\" data-toggle=\"modal\" data-backdrop=\"static\" data-keyboard=\"false\" data-target=\"#catModalCenter\">\r\n      Category\r\n</button>\r\n<div class=\"modal fade\" id=\"catModalCenter\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"catModalCenterTitle\" aria-hidden=\"true\">\r\n    <div class=\"modal-dialog modal-dialog-centered\" role=\"document\">\r\n        <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n                Confirmation\r\n            </div>\r\n            <div class=\"modal-body\">\r\n                <div class=\"container\">\r\n                    <p class=\"text-success\">Hi you have selected problems on train with category hard are you ready for challenge!</p>\r\n                </div>\r\n            </div>\r\n            <div class=\"modal-footer\">\r\n                <button type=\"button\" class=\"btn btn-outline-success\" data-dismiss=\"modal\">I'm ready let the war begin..</button>\r\n            </div>\r\n            <div class=\"modal-footer\">\r\n                <button type=\"button\" class=\"btn btn-outline-primary\" data-dismiss=\"modal\">I wanna change settings.....</button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
@@ -406,6 +439,7 @@ module.exports = "<!-- <div class=\"header-row-wrapper ss-l-font\">\r\n    <div 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomeComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_highlight_service__ = __webpack_require__("../../../../../src/app/shared/highlight.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -416,10 +450,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var HomeComponent = (function () {
-    function HomeComponent() {
+    function HomeComponent(highlightService) {
+        this.highlightService = highlightService;
+        this.highlighted = false;
     }
     HomeComponent.prototype.ngOnInit = function () {
+    };
+    /**
+     * Highlight blog post when it's ready
+     */
+    HomeComponent.prototype.ngAfterViewChecked = function () {
+        if (!this.highlighted) {
+            this.highlightService.highlightAll();
+            this.highlighted = true;
+        }
     };
     return HomeComponent;
 }());
@@ -429,9 +475,10 @@ HomeComponent = __decorate([
         template: __webpack_require__("../../../../../src/app/home/home.component.html"),
         styles: [__webpack_require__("../../../../../src/app/home/home.component.css")]
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__shared_highlight_service__["a" /* HighlightService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__shared_highlight_service__["a" /* HighlightService */]) === "function" && _a || Object])
 ], HomeComponent);
 
+var _a;
 //# sourceMappingURL=home.component.js.map
 
 /***/ }),
@@ -707,7 +754,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/practice/practice.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n    <div class=\"card col-sm mt-20\">\r\n        <div class=\"card-body\">\r\n            <h5 class=\"card-title\">{{model.title}}</h5>\r\n        </div>\r\n        <div class=\"card-body\">\r\n            <label for=\"categoryDescription\">Choose category</label>\r\n            <select class=\"form-control\" [(ngModel)]=\"model.categoryDescription\" name=\"categoryDescription\" id=\"categoryDescription\">\r\n          <option *ngFor=\"let option of categories\" [value]=\"option.categoryDescription\">{{option.categoryDescription}}</option>\r\n        </select>\r\n            <label for=\"levelDescription\">Difficulty</label>\r\n            <select class=\"form-control\" [(ngModel)]=\"model.levelDescription\" name=\"levelDescription\" id=\"levelDescription\">\r\n          <option *ngFor=\"let option of difficulty\" [value]=\"option.levelDescription\">{{option.levelDescription}}</option>\r\n        </select>\r\n        </div>\r\n        <div class=\"card-body\">\r\n            <button (click)=\"openModal(templateConfirmation)\" type=\"button\" class=\"btn btn-outline-primary\">{{model.btnTxt}}</button>\r\n        </div>\r\n    </div>\r\n</div>\r\n<ng-template #templateConfirmation>\r\n    <div class=\"modal-header\">\r\n        Confirmation\r\n    </div>\r\n    <div class=\"modal-body\">\r\n        <div class=\"container\">\r\n            <p class=\"text-success\">Hi you have selected {{model.categoryDescription}} with difficulty level {{model.levelDescription}} are you ready for challenge!</p>\r\n        </div>\r\n    </div>\r\n    <div class=\"modal-footer\">\r\n        <button type=\"button\" class=\"btn btn-outline-success\" (click)=\"handleNextClick(template)\">I'm ready let the war begin..</button>\r\n    </div>\r\n    <div class=\"modal-footer\">\r\n        <button type=\"button\" class=\"btn btn-outline-primary\" (click)=\"closeModal()\">I wanna change settings.....</button>\r\n    </div>\r\n</ng-template>\r\n\r\n<ng-template #template>\r\n    <div class=\"modal-header\">\r\n        <h5 class=\"modal-title\" id=\"exampleModalLongTitle\">New question</h5>\r\n    </div>\r\n    <div class=\"question-modal-body\">\r\n        <div class=\"modal-body\">\r\n            <p class=\"text-left padding-b-10 border-b-q\" [innerHTML]=\"'Q. ' + questions[nextQuestionIndex].question\"></p>\r\n            <p class=\"text-left padding-b-10 border-b-q\" (click)=\"handleOptionClick(i)\" *ngFor=\"let option of questions[nextQuestionIndex].options; let i = index\">\r\n                {{i + '. '}}<span [innerHTML]=\"option\" [ngClass]=\"{'text-success': (questions[nextQuestionIndex].answer === i) && optionValidationArr[i],'text-danger': (questions[nextQuestionIndex].answer !== i) && optionValidationArr[i]}\"></span>\r\n                <span class=\"float-right\" [ngClass]=\"{'text-success': (questions[nextQuestionIndex].answer === i) && optionValidationArr[i]}\" *ngIf=\"(questions[nextQuestionIndex].answer === i) && optionValidationArr[i]\">You are right</span><span class=\"float-right\"\r\n                    [ngClass]=\"{'text-danger': (questions[nextQuestionIndex].answer !== i) && optionValidationArr[i]}\" *ngIf=\"(questions[nextQuestionIndex].answer !== i) && optionValidationArr[i]\">Please try again</span>\r\n            </p>\r\n            <div class=\"container\">\r\n                <p>\r\n                    <a class=\"btn btn-outline-danger\" data-toggle=\"collapse\" href=\"#multiCollapseExample1\" role=\"button\" aria-expanded=\"false\" aria-controls=\"multiCollapseExample1\">View answer</a>\r\n                </p>\r\n                <p class=\"text-danger\">This will reduce your score please try your best before viewing the answer</p>\r\n                <div class=\"collapse multi-collapse\" id=\"multiCollapseExample1\">\r\n                    <div class=\"card card-body\">\r\n                        Correct answer: <span class=\"text-success\">{{questions[nextQuestionIndex].answer}}</span><br> Explaination: <span></span>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <hr />\r\n            <div class=\"progress\">\r\n                <div class=\"progress-bar bg-success progress-bar-animated progress-bar-striped\" role=\"progressbar\" [style.width.%]=\"progress.correctPer\" [attr.aria-valuenow]=\"progress.correctPer\" aria-valuemin=\"0\" aria-valuemax=\"100\">{{(progress.correctPer ? (progress.correctPer + '%'):'')}}</div>\r\n                <div class=\"progress-bar bg-danger progress-bar-animated progress-bar-striped\" role=\"progressbar\" [style.width.%]=\"progress.wrongPer\" [attr.aria-valuenow]=\"progress.wrongPer\" aria-valuemin=\"0\" aria-valuemax=\"100\">{{(progress.wrongPer ? (progress.wrongPer+'%'):'')}}</div>\r\n            </div>\r\n        </div>\r\n        <div class=\"modal-body text-center\">\r\n            <button type=\"button\" class=\"btn btn-outline-primary\" (click)=\"handleAllQuestionsClick(resultTemplate)\">All questions</button>\r\n        </div>\r\n\r\n        <div class=\"modal-footer\">\r\n            <button type=\"button\" class=\"btn btn-outline-danger\" (click)=\"handleEndPracticeClick()\">End practice</button>\r\n            <button type=\"button\" class=\"btn btn-outline-primary\" (click)=\"getNextQuestion(template, resultTemplate)\">{{(((questionArrLen-1) !== nextQuestionIndex) ? \"Next question\" : \"View result\")}}</button>\r\n        </div>\r\n    </div>\r\n</ng-template>\r\n<ng-template #resultTemplate>\r\n    <div class=\"modal-header\">\r\n        <p class=\"text-success\">Correct: {{progress.correct}}</p>\r\n        <p class=\"text-danger\">Wrong: {{progress.wrong}}</p>\r\n        <p class=\"text-secondary\">Not attempted: {{progress.totalQ-progress.correct-progress.wrong}}</p>\r\n    </div>\r\n    <div class=\"modal-body\" *ngIf=\"!isAllQuestionModelVisible\">\r\n        <div class=\"progress\">\r\n            <div class=\"progress-bar bg-success progress-bar-animated progress-bar-striped\" role=\"progressbar\" [style.width.%]=\"progress.correctPer\" [attr.aria-valuenow]=\"progress.correctPer\" aria-valuemin=\"0\" aria-valuemax=\"100\">{{(progress.correctPer ? (progress.correctPer + '%'):'')}}</div>\r\n            <div class=\"progress-bar bg-danger progress-bar-animated progress-bar-striped\" role=\"progressbar\" [style.width.%]=\"progress.wrongPer\" [attr.aria-valuenow]=\"progress.wrongPer\" aria-valuemin=\"0\" aria-valuemax=\"100\">{{(progress.wrongPer ? (progress.wrongPer+'%'):'')}}</div>\r\n        </div>\r\n\r\n        <div class=\"container\">\r\n            <p class=\"text-success\">{{progress.correctPer === 100 ? resultMsg.fullyCorrect : resultMsg.partiallyCorrect}}</p>\r\n        </div>\r\n    </div>\r\n    <div class=\"modal-body\">\r\n        <button [ngClass]=\"{'btn-success': (question.answer === answerArray[i]), 'btn-danger': answerArray[i] && (question.answer !== answerArray[i]),'btn-secondary': (!answerArray[i])}\" *ngFor=\"let question of questions; let i = index\" type=\"button\" class=\"btn rounded-circle margin-r-5 margin-b-5\"\r\n            (click)=\"handleQuestionClick(template, i)\">{{i}}</button>\r\n    </div>\r\n    <div class=\"modal-footer\">\r\n        <button type=\"button\" *ngIf=\"!isAllQuestionModelVisible\" class=\"btn btn-outline-primary\" (click)=\"handleEndPracticeClick()\">Practice next set</button>\r\n        <button type=\"button\" *ngIf=\"isAllQuestionModelVisible\" class=\"btn btn-outline-primary\" (click)=\"handleGoBackToPractice(template)\">Go back to practice</button>\r\n    </div>\r\n</ng-template>"
+module.exports = "<div class=\"container\">\r\n    <div class=\"card col-sm mt-20\" *ngFor=\"let qTypeObj of qdata; let i = index\">\r\n        <div class=\"card-body\">\r\n            <h5 class=\"card-title\">{{qTypeObj.title}}</h5>\r\n        </div>\r\n        <div class=\"card-body\">\r\n            <label for=\"categoryDescription\">Choose category</label>\r\n            <select class=\"form-control\" [name]=\"'categoryDescription' + i\" [id]=\"'categoryDescription' + i\" [(ngModel)]=\"qTypeObj.categoryDescription\"><!--  -->\r\n          <option *ngFor=\"let option of qTypeObj.categories\" [value]=\"option.categoryDescription\">{{option.categoryDescription}}</option>\r\n        </select>\r\n            <label for=\"levelDescription\">Difficulty</label>\r\n            <select class=\"form-control\" [name]=\"'levelDescription' + i\" [id]=\"'levelDescription' + i\" [(ngModel)]=\"qTypeObj.levelDescription\"><!--  -->\r\n          <option *ngFor=\"let option of difficulty\" [value]=\"option.levelDescription\">{{option.levelDescription}}</option>\r\n        </select>\r\n        </div>\r\n        <div class=\"card-body\">\r\n            <button (click)=\"openModal(templateConfirmation);updateModel(qTypeObj.categoryDescription, qTypeObj.levelDescription)\" type=\"button\" class=\"btn btn-outline-primary\">Next</button>\r\n            <!-- {{model.btnTxt}} -->\r\n        </div>\r\n    </div>\r\n</div>\r\n<ng-template #templateConfirmation>\r\n    <div class=\"modal-header\">\r\n        Confirmation\r\n    </div>\r\n    <div class=\"modal-body\">\r\n        <div class=\"container\">\r\n            <p class=\"text-success\">Hi you have selected {{model.categoryDescription}} with difficulty level {{model.levelDescription}} are you ready for challenge!</p>\r\n        </div>\r\n    </div>\r\n    <div class=\"modal-footer\">\r\n        <button type=\"button\" class=\"btn btn-outline-success\" (click)=\"handleNextClick(template)\"><!-- I'm ready let the war begin.. -->Yes</button>\r\n    </div>\r\n    <div class=\"modal-footer\">\r\n        <button type=\"button\" class=\"btn btn-outline-primary\" (click)=\"closeModal()\">I wanna change settings.....</button>\r\n    </div>\r\n</ng-template>\r\n\r\n<ng-template #template>\r\n    <div class=\"modal-header\">\r\n        <h5 class=\"modal-title\" id=\"exampleModalLongTitle\">New question</h5>\r\n    </div>\r\n    <div class=\"question-modal-body\">\r\n        <div class=\"modal-body\">\r\n            <app-question [question]=\"questions[nextQuestionIndex].question\"></app-question>\r\n            <!-- <p class=\"text-left padding-b-10 border-b-q\" [innerHTML]=\"'Q. ' + questions[nextQuestionIndex].question\"></p> -->\r\n            <p class=\"text-left padding-b-10 border-b-q\" (click)=\"handleOptionClick(i)\" *ngFor=\"let option of questions[nextQuestionIndex].options; let i = index\">\r\n                {{i + '. '}}<span [innerHTML]=\"option\" [ngClass]=\"{'text-success': (questions[nextQuestionIndex].answer === i) && optionValidationArr[i],'text-danger': (questions[nextQuestionIndex].answer !== i) && optionValidationArr[i]}\"></span>\r\n                <span class=\"float-right\" [ngClass]=\"{'text-success': (questions[nextQuestionIndex].answer === i) && optionValidationArr[i]}\" *ngIf=\"(questions[nextQuestionIndex].answer === i) && optionValidationArr[i]\">You are right</span><span class=\"float-right\"\r\n                    [ngClass]=\"{'text-danger': (questions[nextQuestionIndex].answer !== i) && optionValidationArr[i]}\" *ngIf=\"(questions[nextQuestionIndex].answer !== i) && optionValidationArr[i]\">Please try again</span>\r\n            </p>\r\n            <div class=\"container\">\r\n                <p>\r\n                    <a class=\"btn btn-outline-danger\" data-toggle=\"collapse\" href=\"#multiCollapseExample1\" role=\"button\" aria-expanded=\"false\" aria-controls=\"multiCollapseExample1\">View answer</a>\r\n                </p>\r\n                <p class=\"text-danger\">This will reduce your score please try your best before viewing the answer</p>\r\n                <div class=\"collapse multi-collapse\" id=\"multiCollapseExample1\">\r\n                    <div class=\"card card-body\">\r\n                        Correct answer: <span class=\"text-success\">{{questions[nextQuestionIndex].answer}}</span><br> Explaination: <span class=\"text-success\">{{questions[nextQuestionIndex].explaination}}</span>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <hr />\r\n            <div class=\"progress\">\r\n                <div class=\"progress-bar bg-success progress-bar-animated progress-bar-striped\" role=\"progressbar\" [style.width.%]=\"progress.correctPer\" [attr.aria-valuenow]=\"progress.correctPer\" aria-valuemin=\"0\" aria-valuemax=\"100\">{{(progress.correctPer ? (progress.correctPer + '%'):'')}}</div>\r\n                <div class=\"progress-bar bg-danger progress-bar-animated progress-bar-striped\" role=\"progressbar\" [style.width.%]=\"progress.wrongPer\" [attr.aria-valuenow]=\"progress.wrongPer\" aria-valuemin=\"0\" aria-valuemax=\"100\">{{(progress.wrongPer ? (progress.wrongPer+'%'):'')}}</div>\r\n            </div>\r\n        </div>\r\n        <div class=\"modal-body text-center\">\r\n            <button type=\"button\" class=\"btn btn-outline-primary\" (click)=\"handleAllQuestionsClick(resultTemplate)\">All questions</button>\r\n        </div>\r\n\r\n        <div class=\"modal-footer\">\r\n            <button type=\"button\" class=\"btn btn-outline-danger\" (click)=\"handleEndPracticeClick()\">End practice</button>\r\n            <button type=\"button\" class=\"btn btn-outline-primary\" (click)=\"getNextQuestion(template, resultTemplate)\">{{(((questionArrLen-1) !== nextQuestionIndex) ? \"Next question\" : \"View result\")}}</button>\r\n        </div>\r\n    </div>\r\n</ng-template>\r\n<ng-template #resultTemplate>\r\n    <div class=\"modal-header\">\r\n        <p class=\"text-success\">Correct: {{progress.correct}}</p>\r\n        <p class=\"text-danger\">Wrong: {{progress.wrong}}</p>\r\n        <p class=\"text-secondary\">Not attempted: {{progress.totalQ-progress.correct-progress.wrong}}</p>\r\n    </div>\r\n    <div class=\"modal-body\" *ngIf=\"!isAllQuestionModelVisible\">\r\n        <div class=\"progress\">\r\n            <div class=\"progress-bar bg-success progress-bar-animated progress-bar-striped\" role=\"progressbar\" [style.width.%]=\"progress.correctPer\" [attr.aria-valuenow]=\"progress.correctPer\" aria-valuemin=\"0\" aria-valuemax=\"100\">{{(progress.correctPer ? (progress.correctPer + '%'):'')}}</div>\r\n            <div class=\"progress-bar bg-danger progress-bar-animated progress-bar-striped\" role=\"progressbar\" [style.width.%]=\"progress.wrongPer\" [attr.aria-valuenow]=\"progress.wrongPer\" aria-valuemin=\"0\" aria-valuemax=\"100\">{{(progress.wrongPer ? (progress.wrongPer+'%'):'')}}</div>\r\n        </div>\r\n\r\n        <div class=\"container\">\r\n            <p class=\"text-success\">{{progress.correctPer === 100 ? resultMsg.fullyCorrect : resultMsg.partiallyCorrect}}</p>\r\n        </div>\r\n    </div>\r\n    <div class=\"modal-body\">\r\n        <button [ngClass]=\"{'btn-success': (question.answer === answerArray[i]), 'btn-danger': answerArray[i] && (question.answer !== answerArray[i]),'btn-secondary': (!answerArray[i])}\" *ngFor=\"let question of questions; let i = index\" type=\"button\" class=\"btn rounded-circle margin-r-5 margin-b-5\"\r\n            (click)=\"handleQuestionClick(template, i)\">{{i}}</button>\r\n    </div>\r\n    <div class=\"modal-footer\">\r\n        <button type=\"button\" *ngIf=\"!isAllQuestionModelVisible\" class=\"btn btn-outline-primary\" (click)=\"handleEndPracticeClick()\">Practice next set</button>\r\n        <button type=\"button\" *ngIf=\"isAllQuestionModelVisible\" class=\"btn btn-outline-primary\" (click)=\"handleGoBackToPractice(template)\">Go back to practice</button>\r\n    </div>\r\n</ng-template>"
 
 /***/ }),
 
@@ -724,6 +771,7 @@ module.exports = "<div class=\"container\">\r\n    <div class=\"card col-sm mt-2
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_util___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_util__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_lodash__ = __webpack_require__("../../../../lodash/lodash.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_lodash__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__data_question__ = __webpack_require__("../../../../../src/app/data/question.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -740,10 +788,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var PracticeComponent = (function () {
     function PracticeComponent(modalService, httpClient) {
         this.modalService = modalService;
         this.httpClient = httpClient;
+        this.qdata = __WEBPACK_IMPORTED_MODULE_6__data_question__["a" /* QDATA */];
         this.categories = [
             { id: '1', categoryDescription: 'Problems on train' },
             { id: '2', categoryDescription: 'Permutations and combinations' }
@@ -764,7 +814,17 @@ var PracticeComponent = (function () {
             partiallyCorrect: 'Would you like to try not attempted questions/wrongly answered questions once again!'
         };
         this.isAllQuestionModelVisible = false;
+        this.highlighted = false;
+        this.initializeModel();
+        // console.log('QDATA -> ', QDATA);
     }
+    PracticeComponent.prototype.initializeModel = function () {
+        var _this = this;
+        this.qdata.forEach(function (data, index) {
+            _this.qdata[index]['categoryDescription'] = data.categories[0].categoryDescription;
+            _this.qdata[index]['levelDescription'] = _this.difficulty[0].levelDescription;
+        });
+    };
     PracticeComponent.prototype.handleNextClick = function (template) {
         var _this = this;
         // TODO api call get questions array on the basis of selected
@@ -902,6 +962,9 @@ var PracticeComponent = (function () {
         };
         this.closeModal();
     };
+    PracticeComponent.prototype.updateModel = function (categoryDescription, levelDescription) {
+        this.model = new __WEBPACK_IMPORTED_MODULE_2__practice_card__["a" /* PracticeCard */]('Aptitude', categoryDescription, levelDescription, 'Next');
+    };
     PracticeComponent.prototype.ngOnInit = function () { };
     return PracticeComponent;
 }());
@@ -995,6 +1058,64 @@ AuthService = __decorate([
 
 var _a;
 //# sourceMappingURL=auth.service.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/shared/highlight.service.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HighlightService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__("../../../common/@angular/common.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prismjs__ = __webpack_require__("../../../../prismjs/prism.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prismjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prismjs__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prismjs_plugins_line_numbers_prism_line_numbers__ = __webpack_require__("../../../../prismjs/plugins/line-numbers/prism-line-numbers.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prismjs_plugins_line_numbers_prism_line_numbers___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_prismjs_plugins_line_numbers_prism_line_numbers__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_prismjs_components_prism_c__ = __webpack_require__("../../../../prismjs/components/prism-c.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_prismjs_components_prism_c___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_prismjs_components_prism_c__);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __param = (this && this.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
+
+
+
+// import 'clipboard';
+
+// import 'prismjs/plugins/toolbar/prism-toolbar';
+// import 'prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard';
+
+// import 'prismjs/components/prism-css';
+// import 'prismjs/components/prism-javascript';
+// import 'prismjs/components/prism-java';
+
+var HighlightService = (function () {
+    function HighlightService(platformId) {
+        this.platformId = platformId;
+    }
+    HighlightService.prototype.highlightAll = function () {
+        if (Object(__WEBPACK_IMPORTED_MODULE_1__angular_common__["isPlatformBrowser"])(this.platformId)) {
+            Prism.highlightAll();
+        }
+    };
+    return HighlightService;
+}());
+HighlightService = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
+    __param(0, Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"])(__WEBPACK_IMPORTED_MODULE_0__angular_core__["PLATFORM_ID"])),
+    __metadata("design:paramtypes", [Object])
+], HighlightService);
+
+//# sourceMappingURL=highlight.service.js.map
 
 /***/ }),
 
@@ -1293,6 +1414,85 @@ AlertComponent = __decorate([
 
 var _a;
 //# sourceMappingURL=alert.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/utility-component/question/question.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p class=\"text-left padding-b-10 border-b-q\" [innerHTML]=\"'Q. ' + question\"></p>"
+
+/***/ }),
+
+/***/ "../../../../../src/app/utility-component/question/question.component.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/utility-component/question/question.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return QuestionComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_highlight_service__ = __webpack_require__("../../../../../src/app/shared/highlight.service.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var QuestionComponent = (function () {
+    function QuestionComponent(highlightService) {
+        this.highlightService = highlightService;
+        this.highlighted = false;
+    }
+    QuestionComponent.prototype.ngOnInit = function () {
+    };
+    /**
+     * Highlight blog post when it's ready
+     */
+    QuestionComponent.prototype.ngAfterViewChecked = function () {
+        if (!this.highlighted) {
+            this.highlightService.highlightAll();
+            this.highlighted = true;
+        }
+    };
+    return QuestionComponent;
+}());
+__decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+    __metadata("design:type", Object)
+], QuestionComponent.prototype, "question", void 0);
+QuestionComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'app-question',
+        template: __webpack_require__("../../../../../src/app/utility-component/question/question.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/utility-component/question/question.component.scss")]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__shared_highlight_service__["a" /* HighlightService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__shared_highlight_service__["a" /* HighlightService */]) === "function" && _a || Object])
+], QuestionComponent);
+
+var _a;
+//# sourceMappingURL=question.component.js.map
 
 /***/ }),
 
